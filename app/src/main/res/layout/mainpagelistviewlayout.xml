@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/leftflag"
+    android:layout_marginTop="17dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+     android:src="@drawable/defaultflagicon"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="17dp"
+    android:id="@+id/leftteam"
+    android:text="Team 1 Name"
+    android:textSize="17sp"
+    android:layout_toRightOf="@id/leftflag"
+    />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_centerInParent="true"
+       android:layout_alignParentTop="true"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="T-20"
+           android:id="@+id/MatchTypetextview"
+           android:textStyle="bold"
+           android:layout_marginTop="5dp"
+
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="vs"
+           android:layout_marginLeft="7dp"
+           android:textSize="13sp"
+           />
+
+
+   </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/rightteam"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Team 2 Name"
+        android:textSize="17sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/rightflag"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/rightflag"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/defaultflagicon"
+        />
+
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#dedede"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Team 1 Name" />
+
+            <TextView
+                android:id="@+id/scoretextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:text="210/5"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/leftsidedetailLL"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Inning"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="2nd"
+                android:layout_marginLeft="6dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="1dp"
+            android:id="@+id/leftverticalline"
+            android:layout_height="17dp"
+            android:layout_marginLeft="10dp"
+            android:background="#dedede"
+            android:layout_toRightOf="@id/leftsidedetailLL"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/leftsidedetail2LL"
+            android:layout_toRightOf="@id/leftverticalline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Target"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="250"
+                android:layout_marginLeft="6dp"
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="10dp"
+            android:background="#dedede"
+            android:layout_toRightOf="@id/leftsidedetail2LL"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rightsidedetailLL"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Over"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Overtextview"
+                android:textSize="10dp"
+                android:text="14.6"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="1dp"
+            android:id="@+id/rightverticalline"
+            android:layout_height="17dp"
+            android:layout_marginRight="10dp"
+            android:background="#dedede"
+            android:layout_toLeftOf="@id/rightsidedetailLL"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rightsidedetail2LL"
+            android:layout_toLeftOf="@id/rightverticalline"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="SR"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="6.3"
+                android:layout_marginLeft="1dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="10dp"
+            android:background="#dedede"
+            android:layout_toLeftOf="@id/rightsidedetail2LL"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
