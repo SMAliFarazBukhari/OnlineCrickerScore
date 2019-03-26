@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorOCSblue">#458AFC</color>
+    <color name="ColorBlack">#000</color>
+    <color name="colorOCSblue">#0008ff</color>
     <color name="colorOCSred">#ff1743</color>
+    <color name="colorOCSredlight">#a0ff1743</color>
+    <color name="colorOCSbluelight">#458AFC</color>
 </resources>

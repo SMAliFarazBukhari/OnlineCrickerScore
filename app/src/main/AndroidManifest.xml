@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".AbooutActivity" />
-        <activity android:name=".AddTeams"></activity>
+        <activity android:name=".AddTeams">
+
+
+        </activity>
     </application>
 
 </manifest>

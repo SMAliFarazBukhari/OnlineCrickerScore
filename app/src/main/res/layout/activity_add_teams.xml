@@ -10,7 +10,7 @@
     <Toolbar
         android:id="@+id/topPanel"
         android:layout_width="match_parent"
-        android:layout_height="53dp"
+        android:layout_height="55dp"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="11dp"
 
@@ -40,7 +40,7 @@
                    android:text="Online Score Card"
                    android:id="@+id/title"
 
-                   android:textColor="#458AFC"
+                   android:textColor="#0008ff"
                    android:textSize="20sp"
                    />
                <TextView
@@ -48,7 +48,7 @@
                    android:layout_height="wrap_content"
                    android:text="Add Team"
                    android:textSize="15sp"
-                   android:textColor="@color/colorOCSred"
+                   android:textColor="@color/colorOCSredlight"
                    />
 
            </LinearLayout>
@@ -77,13 +77,115 @@
         android:id="@+id/TopHorizontalLine"
         android:background="#dedede"/>
 
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Team Name"
-       android:layout_below="@id/TopHorizontalLine"
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginLeft="12dp"
+      android:layout_marginRight="12dp"
+      android:id="@+id/LL1"
+      android:layout_marginTop="30dp"
+      android:layout_centerInParent="true"
+      android:layout_below="@id/TopHorizontalLine"
+      >
 
-       />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/TeamNametextview"
+          android:text="Team Name"
+          android:textSize="15sp"
+          android:textColor="@color/colorOCSblue"
+
+
+          />
+      <EditText
+          android:layout_width="190sp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:hint="Team Name"
+          android:textColor="@color/colorOCSredlight"
+          android:textSize="15sp"
+          android:text="asdasd"
+
+          />
+
+  </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TeamFlagtextview"
+        android:layout_below="@id/LL1"
+        android:layout_marginTop="20sp"
+        android:layout_centerInParent="true"
+        android:text="Team Flag"
+        android:textSize="20sp"
+
+        />
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/imgflag"
+        android:layout_below="@id/TeamFlagtextview"
+        android:layout_marginTop="10sp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/defaultflagicon"
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:id="@+id/browseBtn"
+        android:layout_below="@id/imgflag"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mybutton"
+        android:textSize="12sp"
+        android:textColor="@color/colorOCSblue"
+        android:text="Browse"
+        />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/nextBtn"
+        android:text="Next"
+        android:background="@drawable/mybutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:id="@+id/cancelBtn"
+        android:text="Cancel"
+        android:background="@drawable/mybutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="12sp"
+            android:text="1/5"
+            android:textColor="@color/colorOCSredlight"
+            />
+
+
+
 
 
 </RelativeLayout>
