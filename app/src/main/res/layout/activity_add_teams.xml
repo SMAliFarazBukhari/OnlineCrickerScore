@@ -46,7 +46,7 @@
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="Add Team"
+                   android:text="Matches"
                    android:textSize="15sp"
                    android:textColor="@color/colorOCSredlight"
                    />
@@ -129,6 +129,7 @@
         android:id="@+id/imgflag"
         android:layout_below="@id/TeamFlagtextview"
         android:layout_marginTop="10sp"
+
         android:layout_centerInParent="true"
         android:src="@drawable/defaultflagicon"
         />
@@ -140,6 +141,7 @@
         android:layout_marginTop="12dp"
         android:paddingLeft="6dp"
         android:paddingRight="6dp"
+
         android:layout_centerInParent="true"
         android:background="@drawable/mybutton"
         android:textSize="12sp"
