@@ -25,7 +25,7 @@ public class AddPlayerDetail extends Activity {
     private ImageView menuImage;
     private TextView DateTv;
     private Spinner PlayerTypeSp,BowlerTypeSp;
-    private String SelectedItem;
+    private String SelectedPlayerType;
 
 
     private String PlayerDOB;
@@ -41,29 +41,26 @@ public class AddPlayerDetail extends Activity {
         LL4.setVisibility(View.INVISIBLE);
 
 
-        //Bowler Spinner Stuff
+        //Player & Bowler Spinner Stuff
         PlayerTypeSp=findViewById(R.id.PlayerTypeSpinner);
         BowlerTypeSp=findViewById(R.id.BowlerTypeSpinner);
 
-       // String SelectedItem =PlayerTypeSp.getSelectedItem().toString();
-       // Toast.makeText(AddPlayerDetail.this,SelectedItem,Toast.LENGTH_SHORT).show();
 
-//        if(SelectedItem=="All Rounder"|| SelectedItem=="Bowler")
-//        {
-//            Toast.makeText(AddPlayerDetail.this,SelectedItem,Toast.LENGTH_SHORT).show();
-//            LL4.setVisibility(View.VISIBLE);
-//        }
+
 
        PlayerTypeSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
            @Override
            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-               SelectedItem=parent.getItemAtPosition(position).toString().trim();
+               SelectedPlayerType=parent.getItemAtPosition(position).toString().trim();
 
-               if(SelectedItem=="All Rounder")
+               if(SelectedPlayerType.equals("All Rounder")||SelectedPlayerType.equals("Bowler"))
                {
-                   Toast.makeText(AddPlayerDetail.this,SelectedItem,Toast.LENGTH_SHORT).show();
+                   Toast.makeText(AddPlayerDetail.this,SelectedPlayerType,Toast.LENGTH_SHORT).show();
                    LL4.setVisibility(View.VISIBLE);
+               }
+               else{
+                   LL4.setVisibility(View.INVISIBLE);
                }
               // Toast.makeText(AddPlayerDetail.this,SelectedItem,Toast.LENGTH_SHORT).show();
 
