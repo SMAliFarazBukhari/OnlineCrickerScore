@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Online Cricket Score</string>
+
+    <string-array name="PlayerTypes">
+        <item>All Rounder</item>
+        <item>Batsman</item>
+        <item>Bowler</item>
+    </string-array>
+
+    <string-array name="BowlingTypes">
+        <item>Right-arm fast</item>
+        <item>Right-arm medium</item>
+        <item>Right-arm fast medium</item>
+
+        <item>Left-arm fast</item>
+        <item>Left-arm medium</item>
+        <item>Left-arm fast medium</item>
+
+
+        <item>Right-arm Off Break</item>
+        <item>Right-arm Leg break</item>
+        <item>Slow Left-arm Orthodox</item>
+        <item>Slow Left-arm Chinaman</item>
+
+
+
+
+    </string-array>
 </resources>
