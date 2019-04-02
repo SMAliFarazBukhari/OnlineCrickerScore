@@ -22,6 +22,7 @@ import java.util.Calendar;
 
 public class AddPlayerDetail extends Activity {
 
+    private boolean INTENT_OK;
     private ImageView menuImage;
     private TextView DateTv;
     private Spinner PlayerTypeSp,BowlerTypeSp;
@@ -37,7 +38,9 @@ public class AddPlayerDetail extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_player_detail);
         getActionBar().hide();
+        INTENT_OK=false;
         LL4=findViewById(R.id.LL4);
+
         LL4.setVisibility(View.INVISIBLE);
 
 
@@ -58,9 +61,11 @@ public class AddPlayerDetail extends Activity {
                {
                    Toast.makeText(AddPlayerDetail.this,SelectedPlayerType,Toast.LENGTH_SHORT).show();
                    LL4.setVisibility(View.VISIBLE);
+                   INTENT_OK=true;
                }
                else{
                    LL4.setVisibility(View.INVISIBLE);
+                   INTENT_OK=false;
                }
               // Toast.makeText(AddPlayerDetail.this,SelectedItem,Toast.LENGTH_SHORT).show();
 
@@ -71,6 +76,25 @@ public class AddPlayerDetail extends Activity {
 
            }
        });
+
+       BowlerTypeSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+           @Override
+           public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+               SelectedPlayerType+=","+parent.getItemAtPosition(position).toString();
+               Toast.makeText(AddPlayerDetail.this,SelectedPlayerType,Toast.LENGTH_SHORT).show();
+               INTENT_OK=true;
+           }
+
+           @Override
+           public void onNothingSelected(AdapterView<?> parent) {
+               if(SelectedPlayerType.equals("All Rounder")||SelectedPlayerType.equals("Bowler"))
+               {
+                   INTENT_OK=false;
+               }
+
+           }
+       });
+
 
 
         //Dotted Menu Image Stuff
