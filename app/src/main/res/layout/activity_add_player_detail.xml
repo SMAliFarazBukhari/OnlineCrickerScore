@@ -241,6 +241,13 @@
                 android:layout_below="@id/AssignTeamTv"
                 android:layout_centerInParent="true"
                 />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AssignTeamSpinner"
+                android:layout_centerInParent="true"
+                android:text="Done"
+                />
 
 
 
